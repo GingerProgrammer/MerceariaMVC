@@ -185,8 +185,17 @@ Pressione **F5** ou clique em **Iniciar** no Visual Studio.
 
 ---
 
-<div align="center">
+# 👨‍💻 Créditos
 
-💗 Desenvolvido por Mariana Fernandes
 
-</div>
+### Desenvolvedora
+
+**Mariana Fernandes Souza Santos**
+
+---
+
+### Professor
+
+**Wallace Oliveira dos Santos**
+
+---
