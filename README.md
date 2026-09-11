@@ -1,219 +1,192 @@
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=FF69B4&center=true&vCenter=true&width=850&lines=%E2%9C%A6+MerceariaMVCContext+%E2%9C%A6)](https://github.com/GingerProgrammer)
-<br>
-
-</div>
-
-## 📌 Sobre o projeto 🛒
-
-O **MerceariaMVC** é um sistema desenvolvido em **ASP.NET Core MVC** para o gerenciamento de uma mercearia.
-
-O projeto permite realizar operações de cadastro, consulta, edição e exclusão de **clientes** e **produtos**, utilizando o conceito de **CRUD**.
-
-Além disso, o sistema possui **testes unitários** para validar as regras de negócio das entidades `Cliente` e `Produto`.
+<h1 align="center">🛒 MerceariaMVC</h1>
 
 ---
 
-## ⚙️ Funcionalidades
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=FF69B4&center=true&vCenter=true&width=900&lines=🛒+Sistema+de+Gerenciamento;💻+ASP.NET+Core+MVC;🧪+Desenvolvimento+com+TDD;🗄️+CRUD+com+Entity+Framework+Core)](https://git.io/typing-svg)
+
+</div>
+
+---
+
+<p align="center">
+Sistema de gerenciamento de <b>clientes e produtos</b>,<br>
+desenvolvido com <b>ASP.NET Core MVC, C#, Entity Framework Core e SQL Server</b> ✨
+</p>
+
+---
+
+## 🌸 Tecnologias Utilizadas
+
+<div align="center">
+
+![.NET](https://img.shields.io/badge/.NET-DB2777?style=for-the-badge&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-EC4899?style=for-the-badge&logo=csharp&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-F472B6?style=for-the-badge&logo=dotnet&logoColor=white)
+![Entity Framework Core](https://img.shields.io/badge/Entity_Framework_Core-F9A8D4?style=for-the-badge&logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-BF185D?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![xUnit](https://img.shields.io/badge/xUnit-DB2777?style=for-the-badge&logo=xunit&logoColor=white)
+
+</div>
+
+---
+
+# 📖 Sobre o Projeto
+
+O **MerceariaMVC** é um sistema web desenvolvido em **ASP.NET Core MVC** para gerenciamento de **clientes e produtos** de uma mercearia.
+
+A aplicação utiliza o padrão arquitetural **MVC**, permitindo realizar operações de cadastro, consulta, edição e exclusão de registros.
+
+O projeto também foi desenvolvido utilizando a metodologia **TDD (Test-Driven Development)**, com testes automatizados para validar as principais regras de negócio do sistema.
+
+---
+
+# 🚀 Funcionalidades
 
 ### 👤 Clientes
 
-- ➕ Cadastro de clientes
-- 📋 Listagem de clientes
-- 🔎 Visualização dos dados
-- ✏️ Edição de clientes
-- 🗑️ Exclusão de clientes
-- ✅ Validação dos dados do cliente
-- 🔐 Verificação de permissão
+* ✅ Cadastro de clientes
+* ✅ Listagem de clientes
+* ✅ Visualização dos detalhes
+* ✅ Edição de clientes
+* ✅ Exclusão de clientes
+* ✅ Validação de nome, e-mail e idade
+* ✅ Verificação de permissão para compra
 
 ### 📦 Produtos
 
-- ➕ Cadastro de produtos
-- 📋 Listagem de produtos
-- 🔎 Visualização dos dados
-- ✏️ Edição de produtos
-- 🗑️ Exclusão de produtos
-- 💰 Validação do preço
-- 📊 Validação do estoque
-- 📝 Validação do nome
+* ✅ Cadastro de produtos
+* ✅ Listagem de produtos
+* ✅ Visualização dos detalhes
+* ✅ Edição de produtos
+* ✅ Exclusão de produtos
+* ✅ Validação de nome, preço e estoque
 
 ---
 
-## 💻 Tecnologias utilizadas
+# 🧪 Desenvolvimento com TDD
 
-<div align="center">
+O projeto foi desenvolvido utilizando **TDD (Test-Driven Development)**, uma abordagem de desenvolvimento orientada por testes.
 
-![C#](https://img.shields.io/badge/C%23-FF69B4?style=for-the-badge&logo=csharp&logoColor=white)
-![.NET 8](https://img.shields.io/badge/.NET%208-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Entity Framework Core](https://img.shields.io/badge/Entity%20Framework%20Core-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-FF69B4?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![Razor](https://img.shields.io/badge/Razor-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-FF69B4?style=for-the-badge&logo=bootstrap&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-FF69B4?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-FF69B4?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-FF69B4?style=for-the-badge&logo=javascript&logoColor=white)
-![xUnit](https://img.shields.io/badge/xUnit-FF69B4?style=for-the-badge&logo=xunit&logoColor=white)
+A ideia principal do TDD é criar os testes para as regras de negócio e, em seguida, implementar ou ajustar o código para que os testes sejam aprovados.
 
-</div>
+O processo segue o ciclo:
 
----
+```text
+🔴 Red → 🟢 Green → 🔵 Refactor
 
-## 🔄 CRUD
+* 🔴 **Red:** criação de um teste para uma funcionalidade ou regra que ainda não está funcionando.
+* 🟢 **Green:** implementação da lógica necessária para fazer o teste passar.
+* 🔵 **Refactor:** melhoria e organização do código mantendo os testes funcionando.
 
-O sistema utiliza o conceito de **CRUD**, que representa as quatro operações básicas de gerenciamento de dados:
+No projeto, foram criados testes automatizados para as classes **Cliente** e **Produto**, verificando diferentes cenários de validação.
 
-- 🟢 **Create:** criação de novos registros.
-- 🔵 **Read:** consulta e visualização dos registros.
-- 🟡 **Update:** alteração de registros existentes.
-- 🔴 **Delete:** exclusão de registros.
+### Testes de Clientes
 
-Essas operações são utilizadas principalmente para o gerenciamento de **Clientes** e **Produtos**.
+* ✅ Nome vazio ou nulo
+* ✅ Nome preenchido apenas com espaços
+* ✅ E-mail inválido
+* ✅ Cliente menor de 18 anos
+* ✅ Cliente com 18 anos
+* ✅ Cliente válido
+* ✅ Permissão de compra para cliente ativo e maior de idade
 
----
+### Testes de Produtos
 
-## 🧪 TDD
+* ✅ Preço inválido
+* ✅ Estoque inválido
+* ✅ Nome vazio ou nulo
+* ✅ Produto com dados válidos
 
-O projeto também trabalha com o conceito de **TDD (Test-Driven Development)**, ou **Desenvolvimento Orientado a Testes**.
-
-O TDD é uma metodologia de desenvolvimento em que os testes são utilizados antes e durante a implementação das funcionalidades. O objetivo é garantir que o código desenvolvido esteja de acordo com o comportamento esperado.
-
-O processo do TDD normalmente segue três etapas:
-
-### 🔴 Red
-
-Primeiro é criado um teste que representa o comportamento esperado. Inicialmente, o teste deve falhar.
-
-### 🟢 Green
-
-Depois é desenvolvido ou ajustado o código necessário para que o teste passe.
-
-### 🔵 Refactor
-
-Por último, o código pode ser reorganizado e melhorado, mantendo os testes funcionando corretamente.
-
-### 🧩 TDD no projeto
-
-Neste projeto foram criados testes para verificar as regras de validação das classes:
-
-- `Cliente`
-- `Produto`
-
-Os testes utilizam **xUnit**.
-
-### 👤 Validações de Cliente
-
-A classe `Cliente` possui validações para verificar:
-
-- Se o nome foi preenchido.
-- Se o e-mail possui `@`.
-- Se o cliente possui idade igual ou superior a 18 anos.
-- Se o cliente possui permissão de acordo com seu status e idade.
-
-### 📦 Validações de Produto
-
-A classe `Produto` possui validações para verificar:
-
-- Se o nome foi preenchido.
-- Se o preço é maior que zero.
-- Se o estoque é maior que zero.
+Os testes foram desenvolvidos utilizando o **xUnit**.
 
 ---
 
-## 🧪 Testes
+# 🧪 Executando os Testes
 
-Os testes estão organizados no projeto:
-
-`MerceariaMVCTests`
-
-- `ClienteTeste.cs`
-- `ProdutoTests.cs`
-
-Para executar os testes, utilize:
+Para executar os testes automatizados pelo terminal:
 
 ```bash
 dotnet test
+```
 
-🗄️ Banco de dados
+Também é possível executar os testes diretamente pelo **Test Explorer do Visual Studio**.
 
-O projeto utiliza SQL Server como banco de dados.
+---
 
-A comunicação entre a aplicação e o banco é realizada utilizando o Entity Framework Core.
+# 🖥️ Telas do Sistema
 
-O contexto utilizado no projeto é:
+## 🏠 Tela Inicial
 
-MerceariaMVCContext
+<p align="center">
+  <img src="MerceariaMVC/wwwroot/imagens/TelaInicial.png" width="800">
+</p>
 
-As principais entidades são:
+---
 
-Cliente
-Produto
-📁 Estrutura do projeto
-MerceariaMVC/
-│
-├── MerceariaMVC/
-│   ├── Controllers/
-│   │   ├── ClienteController.cs
-│   │   ├── HomeController.cs
-│   │   └── ProdutoController.cs
-│   │
-│   ├── Data/
-│   │   └── MerceariaMVCContext.cs
-│   │
-│   ├── Models/
-│   │   ├── Cliente.cs
-│   │   ├── Produto.cs
-│   │   └── ErrorViewModel.cs
-│   │
-│   ├── Migrations/
-│   │
-│   ├── Views/
-│   │   ├── Cliente/
-│   │   ├── Produto/
-│   │   ├── Home/
-│   │   └── Shared/
-│   │
-│   ├── wwwroot/
-│   │
-│   ├── Program.cs
-│   ├── appsettings.json
-│   └── MerceariaMVC.csproj
-│
-└── MerceariaMVCTests/
-    ├── ClienteTeste.cs
-    ├── ProdutoTests.cs
-    └── MerceariaMVCTests.csproj
-🚀 Como executar
-📥 Restaurar os pacotes
-dotnet restore
-▶️ Executar o projeto
-dotnet run
-🧪 Executar os testes
-dotnet test
+## 👤 Clientes
 
-Antes de executar o sistema, verifique a string de conexão com o SQL Server no arquivo:
+<p align="center">
+  <img src="MerceariaMVC/wwwroot/imagens/TelaClientes.png" width="800">
+</p>
 
+---
+
+## 📦 Produtos
+
+<p align="center">
+  <img src="MerceariaMVC/wwwroot/imagens/TelaProdutos.png" width="800">
+</p>
+
+---
+
+# ▶️ Como Executar
+
+## Clone o projeto
+
+```bash
+https://github.com/JulliaGabriella/MerceariaMVC.git
+```
+
+---
+
+## Abra a solução
+
+Abra o projeto utilizando o **Visual Studio 2022**.
+
+---
+
+## Configure a conexão
+
+Edite o arquivo:
+
+```text
 appsettings.json
+```
 
-📚 Objetivo
+Configure a sua string de conexão com o **SQL Server**.
 
-O projeto tem como objetivo aplicar na prática conceitos de:
+---
 
-Desenvolvimento Web com ASP.NET Core MVC
-Programação em C#
-Entity Framework Core
-Banco de dados SQL Server
-Operações CRUD
-Validação de dados
-Testes unitários
-TDD
+## Execute as Migrations
 
-👩‍💻 Créditos
-Desenvolvedor
+No **Package Manager Console** do Visual Studio:
 
-Mariana Fernandes Souza Santos
+```powershell
+Update-Database
+```
 
-👨‍🏫 Professor
+---
 
-Wallace Oliveira dos Santos
+## Execute o projeto
+
+Pressione **F5** ou clique em **Iniciar** no Visual Studio.
+
+---
+
+<div align="center">
+
+💗 Desenvolvido por Mariana Fernandes
+
+</div>
