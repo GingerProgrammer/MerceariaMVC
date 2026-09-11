@@ -1,0 +1,60 @@
+@model IEnumerable<MerceariaMVC.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<div class="page-header">
+    <div>
+        <span class="section-label">GERENCIAMENTO</span>
+        <h1>Clientes</h1>
+        <p>Gerencie os clientes cadastrados na mercearia.</p>
+    </div>
+
+    <a asp-action="Create" class="primary-btn">
+        <span>+</span> Novo cliente
+    </a>
+</div>
+
+<div class="panel clients-panel">
+    <div class="panel-head">
+        <div>
+            <span class="section-label">CLIENTES</span>
+            <h2>Lista de clientes</h2>
+        </div>
+    </div>
+
+    <div class="product-table client-table">
+        <div class="product-row table-header">
+            <span>Nome</span>
+            <span>Email</span>
+            <span>Idade</span>
+            <span>Status</span>
+            <span>Ações</span>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <div class="product-row client-row">
+                <span class="client-name">@Html.DisplayFor(modelItem => item.Nome)</span>
+                <span>@Html.DisplayFor(modelItem => item.Email)</span>
+                <span>@Html.DisplayFor(modelItem => item.Idade)</span>
+                <span>
+                    @if (item.Ativo)
+                    {
+                        <span class="badge good">Ativo</span>
+                    }
+                    else
+                    {
+                        <span class="badge warning">Inativo</span>
+                    }
+                </span>
+                <span class="client-actions">
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                </span>
+            </div>
+        }
+    </div>
+</div>

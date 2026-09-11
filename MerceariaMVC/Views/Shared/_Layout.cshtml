@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - MerceariaMVC</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MerceariaMVC.styles.css" asp-append-version="true" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <!-- NAVBAR -->
+
+    <header class="topbar">
+
+        <a class="brand"
+           asp-area=""
+           asp-controller="Home"
+           asp-action="Index">
+
+            <span class="brand-mark">M</span>
+
+            <span>
+                Mercearia<span class="brand-accent">MVC</span>
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a class="nav-link-custom"
+               asp-controller="Home"
+               asp-action="Index">
+
+                Dashboard
+
+            </a>
+
+
+            <a class="nav-link-custom"
+               asp-controller="Produto"
+               asp-action="Index">
+
+                Produtos
+
+            </a>
+
+
+            <a class="nav-link-custom"
+               asp-controller="Cliente"
+               asp-action="Index">
+
+                Clientes
+
+            </a>
+
+
+            <a class="nav-link-custom"
+               asp-controller="Home"
+               asp-action="Privacy">
+
+                Privacidade
+
+            </a>
+
+        </nav>
+
+
+        <div class="top-actions">
+
+            <button class="icon-btn"
+                    id="themePulse"
+                    type="button"
+                    title="Efeito visual">
+
+                ✦
+
+            </button>
+
+
+            <div class="avatar">
+                M
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="app-shell">
+
+        @RenderBody()
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="app-footer">
+
+        <span>
+            © 2026 MerceariaMVC
+        </span>
+
+        <span class="footer-dot"></span>
+
+        <a asp-controller="Home"
+           asp-action="Privacy">
+
+            Privacidade
+
+        </a>
+
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>

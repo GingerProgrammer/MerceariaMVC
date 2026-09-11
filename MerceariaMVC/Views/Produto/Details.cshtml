@@ -1,0 +1,39 @@
+@model MerceariaMVC.Models.Produto
+
+@{
+    ViewData["Title"] = "Detalhes do Produto";
+}
+
+<div class="page-header">
+    <div>
+        <span class="section-label">PRODUTOS</span>
+        <h1>Detalhes do produto</h1>
+        <p>Confira as informações cadastradas.</p>
+    </div>
+</div>
+
+<div class="panel details-panel">
+    <div class="details-icon">📦</div>
+
+    <div class="details-content">
+        <div class="detail-item">
+            <span class="detail-label">Nome</span>
+            <span class="detail-value">@Html.DisplayFor(model => model.Nome)</span>
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Preço</span>
+            <span class="detail-value">@Html.DisplayFor(model => model.Preco)</span>
+        </div>
+
+        <div class="detail-item">
+            <span class="detail-label">Estoque</span>
+            <span class="detail-value">@Html.DisplayFor(model => model.Estoque)</span>
+        </div>
+    </div>
+
+    <div class="form-actions">
+        <a asp-action="Edit" asp-route-id="@Model.IdProduto" class="primary-btn">Editar produto</a>
+        <a asp-action="Index" class="ghost-btn">Voltar</a>
+    </div>
+</div>

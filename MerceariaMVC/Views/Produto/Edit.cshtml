@@ -1,0 +1,50 @@
+@model MerceariaMVC.Models.Produto
+
+@{
+    ViewData["Title"] = "Editar Produto";
+}
+
+<div class="page-header">
+    <div>
+        <span class="section-label">PRODUTOS</span>
+        <h1>Editar produto</h1>
+        <p>Atualize as informações do produto.</p>
+    </div>
+</div>
+
+<div class="panel form-panel">
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="IdProduto" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Nome"></label>
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Preco"></label>
+            <input asp-for="Preco" type="text" inputmode="decimal" class="form-control" data-val="false" />
+            <span class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Estoque"></label>
+            <input asp-for="Estoque" class="form-control" />
+            <span asp-validation-for="Estoque" class="text-danger"></span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="primary-btn">Salvar alterações</button>
+            <a asp-action="Index" class="ghost-btn">Voltar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

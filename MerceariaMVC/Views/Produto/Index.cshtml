@@ -1,0 +1,49 @@
+@model IEnumerable<MerceariaMVC.Models.Produto>
+
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<div class="page-header">
+    <div>
+        <span class="section-label">GERENCIAMENTO</span>
+        <h1>Produtos</h1>
+        <p>Gerencie os produtos cadastrados na mercearia.</p>
+    </div>
+
+    <a asp-action="Create" class="primary-btn">
+        <span>+</span> Novo produto
+    </a>
+</div>
+
+<div class="panel products-page-panel">
+    <div class="panel-head">
+        <div>
+            <span class="section-label">PRODUTOS</span>
+            <h2>Lista de produtos</h2>
+        </div>
+    </div>
+
+    <div class="product-table products-page-table">
+        <div class="product-row table-header">
+            <span>Nome</span>
+            <span>Preço</span>
+            <span>Estoque</span>
+            <span>Ações</span>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <div class="product-row products-page-row">
+                <span class="product-page-name">@Html.DisplayFor(modelItem => item.Nome)</span>
+                <span>@Html.DisplayFor(modelItem => item.Preco)</span>
+                <span>@Html.DisplayFor(modelItem => item.Estoque)</span>
+                <span class="product-page-actions">
+                    <a asp-action="Edit" asp-route-id="@item.IdProduto">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.IdProduto">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.IdProduto">Excluir</a>
+                </span>
+            </div>
+        }
+    </div>
+</div>

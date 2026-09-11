@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MerceariaMVC/MerceariaMVC.csproj" />
+  <Project Path="MerceariaMVCTests/MerceariaMVCTests.csproj" Id="4bd0d7f9-bca6-45c5-8ae5-62c465c9f37d" />
+</Solution>

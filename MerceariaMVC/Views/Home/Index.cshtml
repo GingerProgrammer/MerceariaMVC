@@ -1,0 +1,523 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="dashboard-page">
+
+    <div class="hero-row">
+
+        <div>
+
+            <div class="eyebrow">
+
+                <span class="live-dot"></span>
+
+                Sistema online
+
+            </div>
+
+            <h1>
+                Olá, <span>Seja Bem-Vindo(a)!</span>
+            </h1>
+
+            <p class="hero-copy">
+                Seu estoque, suas vendas e seus produtos em um só lugar.
+            </p>
+
+        </div>
+
+        <button class="primary-btn"
+                id="quickAction"
+                type="button">
+
+            <span>🛒</span>
+
+            Nova movimentação
+
+        </button>
+
+    </div>
+
+    <div class="stats-grid">
+
+        <article class="stat-card pink-card reveal">
+
+            <div class="stat-top">
+
+                <span>
+                    Vendas hoje
+                </span>
+
+                <span class="mini-icon">
+                    🛒
+                </span>
+
+            </div>
+
+            <strong>
+                R$ 2.840,50
+            </strong>
+
+            <div class="stat-foot">
+
+                <span class="trend">
+                    +12,8%
+                </span>
+
+                vs. ontem
+
+            </div>
+
+            <div class="sparkline">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+        </article>
+
+        <article class="stat-card reveal delay-1">
+
+            <div class="stat-top">
+
+                <span>
+                    Produtos
+                </span>
+
+                <span class="mini-icon">
+                    📦
+                </span>
+
+            </div>
+
+            <strong>
+                248
+            </strong>
+
+            <div class="stat-foot">
+
+                <span class="neutral">
+                    12
+                </span>
+
+                em baixa
+
+            </div>
+
+            <div class="progress-line">
+
+                <span style="width: 76%"></span>
+
+            </div>
+
+        </article>
+
+        <article class="stat-card reveal delay-2">
+
+            <div class="stat-top">
+
+                <span>
+                    Clientes
+                </span>
+
+                <span class="mini-icon">
+                    👥
+                </span>
+
+            </div>
+
+            <strong>
+                1.284
+            </strong>
+
+            <div class="stat-foot">
+
+                <span class="trend">
+                    +8,4%
+                </span>
+
+                este mês
+
+            </div>
+
+            <div class="mini-bars">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+        </article>
+
+        <article class="stat-card dark-card reveal delay-3">
+
+            <div class="stat-top">
+
+                <span>
+                    Ticket médio
+                </span>
+
+                <span class="mini-icon">
+                    🧾
+                </span>
+
+            </div>
+
+            <strong>
+                R$ 86,40
+            </strong>
+
+            <div class="stat-foot">
+
+                <span class="trend">
+                    +4,2%
+                </span>
+
+                esta semana
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="content-grid">
+
+        <section class="panel sales-panel reveal delay-2">
+
+            <div class="panel-head">
+
+                <div>
+
+                    <span class="section-label">
+                        Visão geral
+                    </span>
+
+                    <h2>
+                        Desempenho de vendas
+                    </h2>
+
+                </div>
+
+                <select class="period-select">
+
+                    <option>
+                        Últimos 7 dias
+                    </option>
+
+                    <option>
+                        Últimos 30 dias
+                    </option>
+
+                    <option>
+                        Este ano
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div style="
+                margin-top:35px;
+                height:220px;
+                display:flex;
+                align-items:flex-end;
+                gap:12px;
+            ">
+
+                <div style="height:35%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+                <div style="height:50%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+                <div style="height:42%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+                <div style="height:68%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+                <div style="height:58%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+                <div style="height:82%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+                <div style="height:100%; flex:1; background:linear-gradient(to top,#7f204e,#ff4fa3); border-radius:8px 8px 3px 3px;"></div>
+
+            </div>
+
+        </section>
+
+        <section class="panel activity-panel reveal delay-3">
+
+            <div class="panel-head">
+
+                <div>
+
+                    <span class="section-label">
+                        Agora
+                    </span>
+
+                    <h2>
+                        Atividade recente
+                    </h2>
+
+                </div>
+
+                <span class="status-pill">
+                    Ao vivo
+                </span>
+
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity">
+
+                    <span class="activity-icon pink">
+                        🛍
+                    </span>
+
+                    <div>
+
+                        <b>
+                            Venda realizada
+                        </b>
+
+                        <small>
+                            Arroz 5kg + 3 itens
+                        </small>
+
+                    </div>
+
+                    <strong>
+                        + R$ 82,90
+                    </strong>
+
+                </div>
+
+                <div class="activity">
+
+                    <span class="activity-icon dark">
+                        📦
+                    </span>
+
+                    <div>
+
+                        <b>
+                            Estoque atualizado
+                        </b>
+
+                        <small>
+                            Café Torrado 500g
+                        </small>
+
+                    </div>
+
+                    <strong>
+                        - 12 un.
+                    </strong>
+
+                </div>
+
+                <div class="activity">
+
+                    <span class="activity-icon pink">
+                        👤
+                    </span>
+
+                    <div>
+
+                        <b>
+                            Novo cliente
+                        </b>
+
+                        <small>
+                            Cadastro concluído
+                        </small>
+
+                    </div>
+
+                    <strong>
+                        #1284
+                    </strong>
+
+                </div>
+
+                <div class="activity">
+
+                    <span class="activity-icon dark">
+                        🧾
+                    </span>
+
+                    <div>
+
+                        <b>
+                            Venda realizada
+                        </b>
+
+                        <small>
+                            Leite + pão + frios
+                        </small>
+
+                    </div>
+
+                    <strong>
+                        + R$ 47,20
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <section class="panel products-panel reveal delay-3">
+
+        <div class="panel-head">
+
+            <div>
+
+                <span class="section-label">
+                    Estoque
+                </span>
+
+                <h2>
+                    Produtos em destaque
+                </h2>
+
+            </div>
+
+            <a class="ghost-btn"
+               asp-controller="Produto"
+               asp-action="Index">
+
+                Ver todos
+
+                <span>🛒</span>
+
+            </a>
+
+        </div>
+
+        <div class="product-table">
+
+            <div class="product-row table-header">
+
+                <span>Produto</span>
+                <span>Categoria</span>
+                <span>Estoque</span>
+                <span>Preço</span>
+                <span>Status</span>
+
+            </div>
+
+            <div class="product-row">
+
+                <span class="product-name">
+
+                    <i class="product-thumb rice">
+                        R
+                    </i>
+
+                    <b>
+                        Arroz Premium 5kg
+                    </b>
+
+                </span>
+
+                <span>
+                    Mercearia
+                </span>
+
+                <span>
+                    38 un.
+                </span>
+
+                <span>
+                    R$ 29,90
+                </span>
+
+                <span class="badge good">
+                    Disponível
+                </span>
+
+            </div>
+
+            <div class="product-row">
+
+                <span class="product-name">
+
+                    <i class="product-thumb coffee">
+                        C
+                    </i>
+
+                    <b>
+                        Café Torrado 500g
+                    </b>
+
+                </span>
+
+                <span>
+                    Bebidas
+                </span>
+
+                <span>
+                    12 un.
+                </span>
+
+                <span>
+                    R$ 18,50
+                </span>
+
+                <span class="badge warning">
+                    Estoque baixo
+                </span>
+
+            </div>
+
+            <div class="product-row">
+
+                <span class="product-name">
+
+                    <i class="product-thumb milk">
+                        L
+                    </i>
+
+                    <b>
+                        Leite Integral 1L
+                    </b>
+
+                </span>
+
+                <span>
+                    Laticínios
+                </span>
+
+                <span>
+                    64 un.
+                </span>
+
+                <span>
+                    R$ 5,99
+                </span>
+
+                <span class="badge good">
+                    Disponível
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
