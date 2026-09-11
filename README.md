@@ -1,24 +1,11 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=FF69B4&center=true&vCenter=true&width=850&lines=%E2%9C%A6+Ol%C3%A1%2C+seja+bem-vindo+devs+e+divas!+%E2%9C%A6+Eu+sou+a+Mariana+Fernandes)](https://github.com/GingerProgrammer)
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=FF69B4&center=true&vCenter=true&width=850&lines=%E2%9C%A6+MerceariaMVCContext+%E2%9C%A6)](https://github.com/GingerProgrammer)
 <br>
-
-![C#](https://img.shields.io/badge/C%23-FF69B4?style=for-the-badge&logo=csharp&logoColor=white)
-![.NET 8](https://img.shields.io/badge/.NET%208-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Entity Framework](https://img.shields.io/badge/Entity%20Framework-FF69B4?style=for-the-badge&logo=dotnet&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-FF69B4?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-FF69B4?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-FF69B4?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-FF69B4?style=for-the-badge&logo=javascript&logoColor=white)
-![xUnit](https://img.shields.io/badge/xUnit-FF69B4?style=for-the-badge&logo=xunit&logoColor=white)
 
 </div>
 
-# 🛒 MerceariaMVC
-
-## 📌 Sobre o projeto
+## 📌 Sobre o projeto 🛒
 
 O **MerceariaMVC** é um sistema desenvolvido em **ASP.NET Core MVC** para o gerenciamento de uma mercearia.
 
