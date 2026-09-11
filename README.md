@@ -146,7 +146,7 @@ Também é possível executar os testes diretamente pelo **Test Explorer do Visu
 ## Clone o projeto
 
 ```bash
-https://github.com/JulliaGabriella/MerceariaMVC.git
+https://github.com/GingerProgrammer/MerceariaMVC.git
 ```
 
 ---
